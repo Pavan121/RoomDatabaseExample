@@ -10,6 +10,9 @@ import java.util.List;
 
 /**
  * Created by pavan on 16/11/17.
+ * this is an data access object which can be used to fetch, insert update data in database
+ * here User entity is from @{@link User} class which represents an User table in database
+ *
  */
 
 @Dao

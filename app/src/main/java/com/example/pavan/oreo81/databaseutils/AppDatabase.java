@@ -9,6 +9,8 @@ import android.content.Context;
 
 /**
  * Created by pavan on 16/11/17.
+ * this class is used to created singleton object of database instance
+ *
  */
 
 @Database(entities = {User.class},version =2,exportSchema = false)
@@ -26,6 +28,9 @@ public abstract class AppDatabase extends RoomDatabase{
         return INSTANCE;
     }
 
+    /**
+     * this is used if you want to change your database schema you need to use migration
+     */
     public static void destroyInstance() {
         INSTANCE = null;
     }

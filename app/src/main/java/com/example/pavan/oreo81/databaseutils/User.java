@@ -8,6 +8,11 @@ import android.support.annotation.NonNull;
 
 /**
  * Created by pavan on 15/11/17.
+ * this is an entity class we can also call it an one table from database in simple words
+ * columnInfo contains the actual column name in database
+ * if we want to change this schema after installation we have to migrate database using migration
+ * shown in @{@link AppDatabase}
+ * this same entity is used to perform operations on database @{@link UserDao}
  */
 
 @Entity
